@@ -1,0 +1,12 @@
+<configuration>
+    <!-- 数据库配置信息 -->
+    <dataSource>
+        <property name="dirverClass" value="com.mysql.jdbc.Driver"></property>
+        <property name="jdbcUrl" value="jdbc:mysql:///mysql_demo"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="root"></property>
+    </dataSource>
+
+    <!-- 存放Mapper.xml全路径-->
+    <mapper resource="UserMapper.xml"></mapper>
+</configuration>

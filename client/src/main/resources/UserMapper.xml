@@ -1,0 +1,9 @@
+<mapper namespace="com.custom.dao.IUserDao">
+    <!-- sql的唯一标识：namespace.id来组成：statementId -->
+    <select id="findAll" resultType="com.custom.pojo.User">
+        select * from user
+    </select>
+    <select id="fingByCondition" resultType="com.custom.pojo.User" paramterType="com.custom.pojo.User">
+        select * from user where id = #{id} and username = #{username}
+    </select>
+</mapper>
